@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const profileSchema = new Schema({
+const users = new Schema({
   first_name: String,
   last_name: String,
-  location: String,
+  Contact: String,
+  ID: Int16Array,
+  
 });
 
-mongoose.model("profiles", profileSchema);
+mongoose.model("users", users);
