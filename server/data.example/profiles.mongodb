@@ -1,6 +1,6 @@
 // Below is some initial sample data to get you started.
 
-use("example_db"); // This is our example database. Make sure you don't call your database "example_db".
+use("fitness_db"); // This is our example database. Make sure you don't call your database "example_db".
 
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
@@ -8,24 +8,69 @@ db.profiles.drop();
 
 // Insert a few documents into the profiles collection.
 db.profiles.insertMany([  
-    {
-        "first_name": "Efua",
-        "last_name": "Akumanyi",
-        "location": "London"
+     {
+    "studio_name": "StrongHer Space",
+    "type": " Hiit, Lift, Gym",
+    "location": "19a Cudworth St, London E1 5QU",
+    "Website": "https://www.strongher.co.uk/the-studio",
+    "Time" : "[]"      
     },
-    {
-        "first_name": "Gary",
-        "last_name": "McPherson",
-        "location": "London"
+
+    { "studio_name": "Beattitude",
+      "type" : " Hiit, Lift, Endurance, Boxing",
+      "Location" : "Earlsfield",
+      "Website" : "https://beattitude.club/",
+      "Time": "[]"
+
     },
-    {
-        "first_name": "Tanya",
-        "last_name": "Powell",
-        "location": "London"
+
+     { "studio_name" : "Safari MMA",
+      "type" : "Kickboxing, Muay Thai",
+      "Location" : "Fulham",
+      "Website" : "https://www.safarikickboxing.co.uk/",
+      "Time" : "[]"
     },
-    {
-        "first_name": "Michael",
-        "last_name": "Hael",
-        "location": "Port Harcourt city"
+
+    { "studio_name" : "The Bridge",
+      "type" : "Gym, Hiit",
+      "Location" : "73 – 81 Southwark Bridge Road, London, SE1 0NQ",
+      "Website" : "https://www.thebridge-uk.org/",
+      "Time" : "[]"
     }
+
+    { "studio_name" : "Fitology Hub",
+      "type" : "Gym, Hiit",
+      "Location" : "Unit 43, Brockley Cross Business Centre, 96 Endwell Rd, London SE4 2PD",
+      "Website" : "https://www.fitologyhub.com/",
+      "Time" : "[]"
+    },
+
+     { "studio_name" : "Adidas Fitness and Lifestyle Studio",
+      "type" : "Gym, Hiit",
+      "Location" : "152 Brick Ln, London E1 6RU",
+      "Website" : "https://www.adidas.co.uk/studioldn_152bricklane",
+      "Time" : "[]"
+    }
+
+    { "studio_name" : "Fitbirds Fitness",
+      "type" : "Gym, Hiit",
+      "Location" : "152 Brick Ln, London E1 6RU",
+      "Website" : "https://www.adidas.co.uk/studioldn_152bricklane",
+      "Time" : "[]"
+    }
+
+    { "studio_name" : "Go Mammoth",
+      "type" : "Netball",
+      "Location" : "SW18 4GQ",
+      "Website" : "https://www.gomammoth.co.uk/netball/london/",
+      "Time" : "[]"
+    }
+
+
+
+
+    
+   
+
+    
 ]);
