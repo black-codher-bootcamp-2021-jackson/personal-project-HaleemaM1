@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
+const { Schema, Types } = mongoose;
 
-const users = new Schema({
+const userSchema = new Schema({
+  // _id: Types.ObjectId,
   first_name: String,
   last_name: String,
-  Contact: String,
-  ID: Int16Array,
+  email: {type: String, unique: true},
+  password: String, //encrypt the password before saving. bcrypt 
+  
   
 });
 
-mongoose.model("users", users);
+mongoose.model("profiles", userSchema);

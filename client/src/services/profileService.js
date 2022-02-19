@@ -3,10 +3,31 @@
 import axios from "axios";
 
 const getAllProfiles = async () => {
-  const response = await axios.get(`/api/profile`);
+  const response = await axios.get(`/api/profiles`);
 
-  return response.data || [];
+  //We use axios to fetch our API, make get requiest to back end,
+
+  return response.data || []; //if something is wrong with data then reurn an empty array
 };
 
+const createUser = async (user) => {
+  const response = await axios.post('/api/profile',user);
+
+  return response.data 
+};
+
+
+
+//files containing functions that carry out a service ot the entire applcaition, i.e. get response and communcate w/ API. communicate wit the functions.
+
+const userLogin = async (username, password) => {
+  const response = await axios.post('/api/login', {username, password});
+
+  return response.data || [];
+
+};
+
+
+
 // All of the endpoints in this file can be exported below
-export { getAllProfiles };
+export { getAllProfiles, createUser, userLogin };

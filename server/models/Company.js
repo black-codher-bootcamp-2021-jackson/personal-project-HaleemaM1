@@ -1,13 +1,14 @@
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
+const { Schema,Types } = mongoose;
+
 
 const companySchema = new Schema({
+  // _id: Types.ObjectId,
   company_name: String,
   type: String,
   location: String,
   website: String,
   times: [Date],
-  ID: Int16Array,
 });
 
-mongoose.model("studios", companySchema);
+mongoose.model("company", companySchema);

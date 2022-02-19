@@ -1,0 +1,5 @@
+use("fitness_db"); 
+
+db.profiles.drop()
+
+//jwt to create login, token , use token to access resources in the backend

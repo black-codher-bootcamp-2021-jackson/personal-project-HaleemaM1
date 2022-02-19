@@ -14,7 +14,8 @@ return(
 <div id= "headerContainer">
 <Link to="/" id="homelink"> Home </Link> 
 <Link to="/about" id="aboutlink"> About </Link> 
-<Link to="/cart" id="cartlink"> Fitness Class Cart</Link>
+<Link to="/cart" id="cartlink"> Sign up</Link>
+<Link to="/login" id="loginlink"> Login</Link>
 
 
 </div>

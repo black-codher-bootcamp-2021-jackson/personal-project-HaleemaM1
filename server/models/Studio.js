@@ -1,13 +1,15 @@
 const mongoose = require("mongoose");
-const { Schema } = mongoose;
+const { Schema, Types } = mongoose;
 
 const studioSchema = new Schema({
+
+  // _id: Types.ObjectId,
   studio_name: String,
-  type: String,
+  type: [String],
   location: String,
   website: String,
   times: [Date],
-  ID: Int16Array,
+  
 });
 
 mongoose.model("studios", studioSchema);
