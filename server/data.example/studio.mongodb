@@ -13,14 +13,17 @@ db.studios.insertMany([
     "type": ["Hiit", "Lift", "Gym"],
     "location": "19a Cudworth St, London E1 5QU",
     "Website": "https://www.strongher.co.uk/the-studio",
-    "Time" : "[]"      
+    "Time" : "[]",     
+    "Image" : "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/mfza2iavbbylhenwzdga.jpg"
+
     },
 
     { "studio_name": "Beattitude",
       "type" :  ["Hiit", "Lift", "Endurance", "Boxing"],
       "Location" : "Earlsfield",
       "Website" : "https://beattitude.club/",
-      "Time": "[]"
+      "Time": "[]",
+      "Image" : "https://www.google.com/maps/uv?pb=!1s0x487605ff4b3da53b%3A0xefe5023c2b0c2fa3!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNtIDrmeRVT6ZnTIwI9WqdKrIrekjkWlq9rYPl9%3Dw568-h320-k-no!5sbeattitude%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNtIDrmeRVT6ZnTIwI9WqdKrIrekjkWlq9rYPl9&hl=en&sa=X&ved=2ahUKEwiryK6tooz2AhWOFMAKHY3HDgIQoip6BAg1EAM#"
 
     },
 
@@ -28,14 +31,16 @@ db.studios.insertMany([
       "type" : ["Kickboxing", "Muay Thai"],
       "Location" : "Fulham",
       "Website" : "https://www.safarikickboxing.co.uk/",
-      "Time" : "[]"
+      "Time" : "[]",
+      "Image" : "https://www.safarikickboxing.co.uk/wp-content/uploads/2020/04/logo.png"
     },
 
     { "studio_name" : "The Bridge",
       "type" : ["Gym", "Hiit"],
       "Location" : "73 – 81 Southwark Bridge Road, London, SE1 0NQ",
       "Website" : "https://www.thebridge-uk.org/",
-      "Time" : "[]"
+      "Time" : "[]",
+      "Image": "https://images.squarespace-cdn.com/content/v1/5751a1f12eeb812c91f789a7/1490668548588-XAUAF7DTJE8OQQXODM0J/bridgenewcolours.png?format=1500w"
     }
     ,
 
@@ -43,14 +48,16 @@ db.studios.insertMany([
       "type" : ["Gym", "Hiit"],
       "Location" : "Unit 43, Brockley Cross Business Centre, 96 Endwell Rd, London SE4 2PD",
       "Website" : "https://www.fitologyhub.com/",
-      "Time" : "[]"
+      "Time" : "[]",
+      "Image": "data:image/jpeg;base64,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"
     },
 
      { "studio_name" : "Adidas Fitness and Lifestyle Studio",
       "type" : ["Gym", "Hiit"],
       "Location" : "152 Brick Ln, London E1 6RU",
       "Website" : "https://www.adidas.co.uk/studioldn_152bricklane",
-      "Time" : "[]"
+      "Time" : "[]",
+      "Image" : "https://lashesoflifestyle.co.uk/wp-content/uploads/2019/09/Adidas-Studio-London-2.jpg" 
     }
     ,
 
@@ -58,7 +65,9 @@ db.studios.insertMany([
       "type" : ["Gym", "Hiit"],
       "Location" : "152 Brick Ln, London E1 6RU",
       "Website" : "https://www.adidas.co.uk/studioldn_152bricklane",
-      "Time" : "[]"
+      "Time" : "[]",
+      "Image" : "https://static.wixstatic.com/media/0abb8e_8c9001a951c2490199d57b79be43ae81~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,usm_0.66_1.00_0.01/0abb8e_8c9001a951c2490199d57b79be43ae81~mv2.webp"
+
     }
     ,
 

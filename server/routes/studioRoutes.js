@@ -35,13 +35,6 @@ const studioRoutes = (app) => {
     return res.status(200).send(typeExercise);
   });
 
-  // app.get(`/api/salons/filter`, async (req, res) => {
-  //   // console.log("angela", req.query);
-  //   const { location, services } = req.query; // "manchester" ,["wigs"]
-  //   const response = await Salon.find({ location: location, services: { $in: services } });
-  //   // { location: "Manchester", services: { $all: ["wigs"] } },
-  //   return res.status(200).send(response);
-  // })
 
 
   
