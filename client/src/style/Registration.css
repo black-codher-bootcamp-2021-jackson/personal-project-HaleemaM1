@@ -1,13 +1,17 @@
+
+body{
+    background-color: pink;
+}
 .App {
     text-align: center;
-    background-color:green;
+    background-color: pink;
   }
    
   .label{
     display: block;
     font-size: larger;
     color: white;
-    padding: 5px;
+    padding: 10px;
   }
    
   .input{

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { userLogin } from "../services/profileService";
+import "../style/Login.css";
+
 
 function Login({ setError, setUser }) {
   const [details, setDetails] = useState({ name: "", email: "", password: "" });
@@ -17,7 +19,8 @@ function Login({ setError, setUser }) {
   };
 
   return (
-    <div>
+    <div id= "login-body">
+      
       <form onSubmit={submitHandler}>
         <div className="form=inner">
           <h2> Login</h2>

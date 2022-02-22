@@ -25,14 +25,18 @@ const studioRoutes = (app) => {
   });
 
   //get request to return a specific type of excerise
+
   ////One of the functionalities for my applciation is for the user to search for th excercise of choice so one of the endpoints is a get request to find the type of excerise
 
   app.get("/api/studios/filterType", async (req, res) => {
-    console.log(req.params)
-    const typeValue = req.params.type;
-    const typeExercise = await Studio.find({ type: typeValue }).exec();
+    // console.log(req.params)
+    // const typeValue = req.params.type;
+    const query = {type:req.body.type}
+    console.log(query)
+    const typeExercise = await Studio.find(query).exec();
 
     return res.status(200).send(typeExercise);
+    
   });
 
 
