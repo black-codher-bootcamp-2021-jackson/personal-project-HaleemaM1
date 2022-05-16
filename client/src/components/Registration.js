@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/Registration.css";
-import { createUser, userLogin} from "../services/profileService";
+import { createUser} from "../services/profileService";
 
 export default function Form() {
   // States for registration
@@ -90,7 +90,7 @@ export default function Form() {
   return (
     <div className="form">
       <div>
-        <h1>User Registration</h1>
+        <h1 id = "h1registration">User Registration</h1>
       </div>
 
       {/* Calling to the methods */}

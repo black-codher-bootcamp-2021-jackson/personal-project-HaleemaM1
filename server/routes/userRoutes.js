@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Profile = mongoose.model("profiles");
+// console.log('hello')
 
 //Login
 const userRoutes = (app) => {
@@ -22,11 +23,7 @@ const userRoutes = (app) => {
     }
   });
 
-  app.get(`/api/profile`, async (req, res) => {
-    const profiles = await Profile.find();
-
-    return res.status(200).send(profiles);
-  });
+  
 
   //Create User
   app.post(`/api/profile`, async (req, res) => {

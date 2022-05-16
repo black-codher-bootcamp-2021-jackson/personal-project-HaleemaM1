@@ -7,7 +7,7 @@ export default function Studio (props) {
     <>
       <div id="resultsContainer">
         <div id="properties">
-          {/* <img src={props.image alt={props.image} /> */}
+          {/* <img src={props.image} alt={props.studioName} /> */}
           <h4 className="studioName"> {props.studioName} </h4>
           <h3 className="type"> {props.type} </h3>
           <p className="location"> {props.location}</p>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { userLogin } from "../services/profileService";
 import "../style/Login.css";
+import images from "../images/knee.png"
 
 
 function Login({ setError, setUser }) {
@@ -27,7 +28,7 @@ function Login({ setError, setUser }) {
           {/* { error !== "" && (<div className = "error"> {error} </div> ) } */}
           <div className="form-group">
             <label htmlFor="name">Name :</label>
-            <input
+            <input className = "inputLogin"
               type="text"
               name="name"
               id="name"
@@ -63,6 +64,9 @@ function Login({ setError, setUser }) {
           <input type="submit" value="LOGIN" />
         </div>
       </form>
+<div className ="imageKnee"> 
+      {/* <img src = {images} alt ="knee" /> */}
+      </div>
     </div>
   );
 }

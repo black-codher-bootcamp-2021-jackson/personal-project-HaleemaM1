@@ -8,7 +8,8 @@ const studioSchema = new Schema({
   type: [String],
   location: String,
   website: String,
-  times: [Date],
+  Times: [Date],
+  Image : String
   
 });
 

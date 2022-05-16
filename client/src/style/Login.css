@@ -1,3 +1,51 @@
 #login-body {
-color: purple;
+color: black;
+padding: 60px;
+font-family: 'Montserrat', sans-serif;
+
+
 }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size:  40px;
+    padding: -50px;
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+     margin: 2px;
+     color: black;
+         
+}
+
+label{
+    display: block;
+    font-size: larger;
+    color: black;
+    padding: 10px;
+  }
+
+  img {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    size: 60px;
+  }
+
+  #form-group {
+    color: black;
+
+  }

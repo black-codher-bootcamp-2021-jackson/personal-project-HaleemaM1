@@ -1,0 +1,19 @@
+#searchAPI {
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    
+
+}
+
+/* * {
+    background-color: #B76E79; */
+
+    label{
+        display: block;
+        font-size: larger;
+        color: white;
+        padding: 10px;
+      }

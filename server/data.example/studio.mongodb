@@ -4,7 +4,7 @@ use("fitness_db"); // This is our example database. Make sure you don't call you
 
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
-db.studios.drop();
+// db.studios.drop();
 
 // Insert a few documents into the profiles collection.
 db.studios.insertMany([  

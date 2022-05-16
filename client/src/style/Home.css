@@ -1,0 +1,13 @@
+#Homeh1 {
+    color: black;
+    font-size: 70px;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+.image-container {
+    position: absolute ;
+    top: 20px;
+    /* right: 50x; */
+   size:  110px; 
+}

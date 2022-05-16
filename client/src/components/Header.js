@@ -10,7 +10,7 @@ return(
 
 <>
 
-
+<header className ="Header">
 <div id= "headerContainer">
 <Link to="/" id="homelink"> Home </Link> 
 <Link to="/about" id="aboutlink"> About </Link> 
@@ -19,6 +19,7 @@ return(
 
 
 </div>
+</header>
 </>
 )
 

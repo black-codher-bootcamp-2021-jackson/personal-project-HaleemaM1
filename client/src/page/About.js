@@ -1,19 +1,19 @@
 import React from "react";
 import "../style/About.css";
-import images from "../images/stretch.png";
+
+
 
 export default function About() {
   return (
-    <div id="aboutbody">
-      <h1 className = "Abouth1"> About Page </h1>
-
-      <p>
-        Use the Her Fitness App to find the nearest and best female fitness spaces for you
-
-        
-      </p>
-
-      <img src = {images} alt ="stretch"/>
+  <body> 
+    <div class = "flex-container">
+      <div class = "flexbox-item-1"> </div>
+      <div class = "flexbox-item-2"> </div>
+      <div class = "flexbox-item-3"> </div>
+      <div class = "flexbox-item-4"> </div>
+    
     </div>
+    </body>
+   
   );
 }
